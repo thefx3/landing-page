@@ -15,8 +15,7 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 50px ;
+    padding: 15px 12.5% 50px 12.5%;
 }
 
 /* Adjust font logo */
@@ -48,7 +47,7 @@ a {
 /* Container 1 */
 .container1 {
     gap: 50ox;
-    border: 2px solid #3c7503;
+    padding : 50px 12.5%;
 }
 
 /* Text side */
@@ -57,7 +56,6 @@ a {
     flex-flow: column wrap;
     gap: 15px;
     padding: 10px 15px 10px 0px;
-    border: 2px solid #08068f;
     justify-content: space-between;
     align-items: flex-start
 }
@@ -85,7 +83,6 @@ a {
 
 .subtitle {
     font-size: 18px;
-    color: #E5E7EB;
 }
 
 /* Image side */
@@ -95,17 +92,17 @@ a {
     align-items: center;
    
     width: fit-content;
-    min-width: 250px;
-    max-width: 550px;
+    min-width: 400px;
+    max-width: 600px;
     height: auto;
 
-    border: 1px solid #F9FAF8;
+    /* border: 1px solid #F9FAF8; */
 
 }
 
 .image img {
     width: 100%;
-    height: auto;
+    height: fit-content;
 
 }
 
@@ -114,13 +111,16 @@ a {
         flex-direction: column;
     }
 
+    .containertext {
+        margin-bottom: 15px;
+    }
+
     .title1, .button1, .image{
         align-self: center;
     }
-    .subtitle {
+    .subtitle, .title1 {
     text-align: center;
     }
-    
 }
 
 
