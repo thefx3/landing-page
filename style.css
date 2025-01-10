@@ -142,29 +142,33 @@ button {
 /* Boxes container */
 .boxes {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    border: 1px solid red;
 
-    gap: 20px;
+    gap:10px;
 }
 
 .info {
-    display:flex;
+    display : flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
     text-align: center;
     gap: 10px;
-    
-    flex-grow: 1;
+
+    flex:1;
 }
 
 .boxes img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 
 .text {
-    max-width: 300px;
+    max-width: 250px;
 }
 
 /* Quote container */
