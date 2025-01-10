@@ -159,12 +159,12 @@ button {
 }
 
 .boxes img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
 .text {
-    max-width: 200px;
+    max-width: 300px;
 }
 
 /* Quote container */
