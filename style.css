@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-/* Color the Header, 1st Container and Footer */
+/* Color the Header, Container 1 and Footer */
 .header, .footer,.container1 {
     background-color: #1F2937;
     color: #F9FAF8;
@@ -15,13 +15,16 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 50px ;
 }
 
 /* Adjust font logo */
 .logo {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 /* Right elements (the links) of the header */
@@ -35,14 +38,90 @@ body {
 
 /* Suppress the link style */
 a {
-    color: #F9FAF8;
+    color: #E5E7EB;
     text-decoration: none;
+    font-size: 18px;
+
 }
 
 
+/* Container 1 */
+.container1 {
+    gap: 50ox;
+    border: 2px solid #3c7503;
+}
 
+/* Text side */
+.containertext {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    padding: 10px 15px 10px 0px;
+    border: 2px solid #08068f;
+    justify-content: space-between;
+    align-items: flex-start
+}
 
+.title1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
 
+}
+
+.button1 {
+    background-color: #3882F6;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bold;
+    box-shadow: none;
+    border: none;
+    padding: 5px 25px;
+    width:150px;
+
+    flex-shrink: 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* Image side */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: fit-content;
+    min-width: 250px;
+    max-width: 550px;
+    height: auto;
+
+    border: 1px solid #F9FAF8;
+
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .container1 {
+        flex-direction: column;
+    }
+
+    .title1, .button1, .image{
+        align-self: center;
+    }
+    .subtitle {
+    text-align: center;
+    }
+    
+}
 
 
 /*
