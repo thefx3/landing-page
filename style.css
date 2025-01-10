@@ -143,19 +143,22 @@ button {
 .boxes {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap : 10px;
 }
 
 .info {
-    width: 200px;
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
     gap: 10px;
+
+    border : 1px solid red;
+    flex:1;
+
 }
 
 .boxes img {
