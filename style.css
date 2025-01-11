@@ -4,7 +4,7 @@ body {
 }
 
 /* Color the Header, Container 1 and Footer */
-.header, .footer,.container1 {
+.header, .footer,.container1, .copyright {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
@@ -17,7 +17,7 @@ body {
     align-items: center;
 }
 
-.header, .container1, .container2,.container3{
+.header, .container1, .container2,.container3, .copyright{
     padding : 40px 20% 40px 20%;
 }
 
@@ -229,4 +229,10 @@ button {
 
 .button2 {
     border: 1px solid #ffffff;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
